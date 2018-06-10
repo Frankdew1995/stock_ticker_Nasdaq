@@ -10,7 +10,7 @@ from datetime import datetime
 
 
 
-df = pd.read_csv('/Users/frankdu/Learn_Dash_Plotly/stock_ticker/NASDAQcompanylist.csv')
+df = pd.read_csv('NASDAQcompanylist.csv')
 
 app = dash.Dash()
 
