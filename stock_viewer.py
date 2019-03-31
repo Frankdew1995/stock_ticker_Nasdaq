@@ -14,6 +14,8 @@ df = pd.read_csv('NASDAQcompanylist.csv')
 
 app = dash.Dash()
 
+app.title = "Stock Ticker NASDAQ"
+
 server = app.server
 
 app.layout = html.Div([
@@ -87,10 +89,6 @@ def update_graph(tickers,start,end):
         'data':traces
 
         }
-
-
-
-
 
 
 app.css.append_css({'external_url': 'https://codepen.io/chriddyp/pen/bWLwgP.css'})
